@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bolder;
+  }
+  .regis {
+    background-image: url('https://digital.ihg.com/is/image/ihg/ihg-lp-refresh-hero-imea-gben-lvp-1440x617'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    width: 100vw;
+    padding-top: 100px;
+    flex-direction: column;
+    padding-top: 250px;
+  }
+  .register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 8px;
+    width: 700px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color:rgba(117, 177, 233, 0.3); 
+    margin-left: 100px;
+  }
+  .log{
+    background-image: url('https://digital.ihg.com/is/image/ihg/ihg-lp-refresh-hero-imea-gben-lvp-1440x617'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh; 
+    width: 100vw;
+    height:100vh;
+    flex-direction: column;
+    padding-top: 200px;
+  }
+  .login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color:rgba(117, 177, 233, 0.3); 
+    margin-left: 100px;
+    margin-top: 100px;
+  }
+  
+  .MuiTextField-root {
+    margin: 10px 0;
+    font-weight: bolder;
+    color: white;
+  }
+  
+  .MuiFormControl-root {
+    margin: 10px 0;
+  }
+  
+  .MuiFormLabel-root {
+    font-weight: bold;
+    color: #fff; 
+    font-size: 20px; 
+  }
+  
+  .MuiInputBase-root {
+    color: #fff;
+  }
+  
+  .MuiRadio-root {
+    color: #fff; 
+  }
+
+  
+  .MuiFormControlLabel-root {
+    margin-right: 20px;
+  }
+  /* Apply a global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+.form-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 100px;
+  margin-left: 300px;
+  background-color: rgb(110, 103, 103,0.1);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+td {
+  padding: 10px;
+}
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="file"] {
+  margin-top: 5px;
+}
+button {
+  background-color: black;
+  color:#FFD43B;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    width: 90%;
+  }
+}
+.first{
+  width: 100vw;
+  height: 450px;
+  background-color: #FFD43B;
+  margin-top: 0;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: moveup 1s linear forwards;
+}
+@keyframes moveup{
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.search{
+  animation: search 1s linear forwards;
+  transform: translatey(50px);
+}
+@keyframes search{
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.userdashboard {
+  margin-top: 60px; 
+  background-color: #FFD43B;
+}
+.h1{
+  width: max-content;
+  position: relative;
+  cursor: pointer;
+  animation: slide 1s  linear ;
+}
+@keyframes slide{
+  0%{
+      transform: translateX(150px);
+  }
+  100%{
+       transform: translateX(0px);
+  }
+}
+.h1::after{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 4px;
+  width: 100%;
+  left: 0;
+  background-color: black;
+  transition: o.3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+.h1:hover::after{
+  transform: scaleX(1);
+}
+.button{
+  padding: 14px 40px;
+  border-radius: 30px;
+  border-top-right-radius: 0px;
+  animation-delay: 1s;
+}
+.button:hover{
+  transition: all 0.2s ease;
+  border-top-right-radius: 30px;
+}
+th ,tr, td{
+  border: 2px solid black;
+}
+.parent{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+.c1{
+  position: absolute;
+  height: 100vh;
+  width: 25vw;
+  float: left;
+  left: 0;
+  border: 2px solid #FFD43B;
+  padding-top: 300px;
+}
+.c2{
+  position: absolute;
+  height: 100vh;
+  width: 75vw;
+  float: right;
+  right: 0;
+  overflow: scroll;
+  padding: 20px;
+  padding-top: 100px;
+}
+
+
+
+  
